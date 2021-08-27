@@ -23,8 +23,10 @@ SELECT * FROM `degrees`
 WHERE `level` = 'magistrale';
 
 7.
-SELECT * FROM `departments`;
+SELECT COUNT(`id`) AS `quanti_dipartimenti`
+FROM `departments`;
 
 8.
-SELECT * FROM `teachers`
+SELECT COUNT(`id`) AS `quanti_insegnanti`
+FROM `teachers`
 WHERE `phone` IS NULL;
